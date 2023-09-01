@@ -270,6 +270,26 @@
     color: #469af8;
   }
   
+  .uncheck-btn {
+    margin-top: 16px;
+    margin-left: 2px;
+    background: #2cbb95;
+    border-radius: 30px;
+    font-size: 28px;
+    width: 350px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    color: #FEFEFE;
+    border: 3px solid #2cbb95;
+  }
+  
+  .uncheck-button:hover {
+    background-color: #FEFEFE;
+    color: #2cbb95;
+    transition: all 0.3s ease;
+  }
+  
   /* new, edit ================================ */
   .item-form-wrapper {
     background-color: #FEFEFE;

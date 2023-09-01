@@ -42,7 +42,16 @@
              <% }) %>
         </ul>
       </div>
-    </div>
-    <script src="app.js"></script>
+      <button id="uncheck-btn" class="uncheck-btn">全てのチェックを外す</button>
+      <script>
+       const uncheckBtn = window.document.getElementById("uncheck-btn"); 
+       const el = window.document.getElementsByName("chk"); 
+       const uncheckAll = () => { 
+         for (let i = 0; i < el.length; i++) { 
+           el[i].checked = false; 
+           }}; 
+        uncheckBtn.addEventListener("click", uncheckAll, false); 
+      </script>
+      </div>
   </body>
 </html>
