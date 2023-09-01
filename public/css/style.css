@@ -7,13 +7,13 @@
     font-size: 100%;
     font-family: 'BIZ UDPGothic', sans-serif;
     line-height: 1.7;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
   
   body {
     margin: 0;
     background-color: #f6faff;
-    color: #00183c;
+    color: #263D48;
   }
   
   ul, li {
@@ -62,7 +62,7 @@
     min-width: 320px;
     margin-top: -20px;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #FEFEFE;
   }
   
   .top-detail .subtitle {
@@ -81,16 +81,16 @@
   .top-detail .description {
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     margin-bottom: 40px;
   }
   
   .top-detail .index-button {
-    width: 220px;
-    height: 48px;
+    width: 350px;
+    height: 60px;
     text-align: center;
     margin: 0 auto;
-    line-height: 45px;
+    line-height: 55px;
     font-weight: 600;
     color: #ffffff;
     background-color: #2488f7;
@@ -99,25 +99,16 @@
   
   .top-detail .index-button:hover {
     color: #2488f7;
-    border: 2px solid #2488f7;
+    border: 3px solid #2488f7;
     background-color:  #ffffff;
   }
   
   
   .index-button {
     cursor: pointer;
+    font-size: 30px;
   }
-  
-  .top-image {
-    width: 64%;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .top-image img {
-    width: 88%;
-  }
-  
+ 
   /* header ================================ */
   header {
     height: 56px;
@@ -157,16 +148,16 @@
   .container-header .new-button {
     background: #2488f7;
     border-radius: 30px;
-    font-size: 20px;
-    width: 150px;
-    height: 45px;
-    line-height: 43px;
+    font-size: 28px;
+    width: 250px;
+    height: 55px;
+    line-height: 50px;
     text-align: center;
-    color: #ffffff;
-    border: 2px solid #2488f7;
+    color: #FEFEFE;
+    border: 3px solid #2488f7;
   }
   .container-header .new-button:hover {
-    background-color: #ffffff;
+    background-color: #FEFEFE;
     color: #2488f7;
     transition: all 0.3s ease;
   }
@@ -176,17 +167,17 @@
     margin-left: 2px;
     background: #2cbb95;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 28px;
     width: 200px;
-    height: 45px;
-    line-height: 43px;
+    height: 55px;
+    line-height: 50px;
     text-align: center;
-    color: #ffffff;
-    border: 2px solid #2cbb95;
+    color: #FEFEFE;
+    border: 3px solid #2cbb95;
   }
   
   .cancel-button:hover {
-    background-color: #ffffff;
+    background-color: #FEFEFE;
     color: #2cbb95;
     transition: all 0.3s ease;
   }
@@ -203,7 +194,7 @@
     height: 60px;
     font-size: 25px;
     line-height: 60px;
-    color: #ffffff;
+    color: #FEFEFE;
   }
   
   .id-column {
@@ -212,7 +203,7 @@
   }
   
   .table-body {
-    background-color: #ffffff;
+    background-color: #FEFEFE;
   }
   
   .table-body li {
@@ -226,9 +217,9 @@
   }
   
   .table-body .name-column {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    color: #00183c;
+    color: #263D48;
     margin-left: 25px;
   }
   
@@ -246,13 +237,13 @@
   }
   
   .item-menu form {
-    width: 60px;
+    width: 70px;
     text-align: center;
   }
   
   .item-menu form input {
-    font-size: 20px;
-    color: #00183c;
+    font-size: 28px;
+    color: #263D48;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -269,9 +260,9 @@
   }
   
   .item-menu a {
-    width: 70px;
-    font-size: 20px;
-    color: ##00183c;
+    width: 100px;
+    font-size: 28px;
+    color: ##263D48;
     text-align: center;
   }
   
@@ -281,15 +272,15 @@
   
   /* new, edit ================================ */
   .item-form-wrapper {
-    background-color: #ffffff;
+    background-color: #FEFEFE;
     border: 1px solid #f0f4f9;
     border-radius: 0px 0px 2px 2px;
     padding: 32px;
   }
   
   .form-label {
-    font-size: 20px;
-    color: #00183c;
+    font-size: 25px;
+    color: #263D48;
   }
   
   .item-form-wrapper input[type="text"] {
@@ -300,27 +291,27 @@
     background-color: #fcfcfd;
     border: 1px solid #5f6670;
     border-radius: 2px;
-    color: #00183c;
+    color: #263D48;
     font-size: 30px;
   }
   
   .item-form-wrapper input[type="submit"] {
     display: block;
-    width: 120px;
-    height: 45px;
+    width: 170px;
+    height: 60px;
     margin-top: 24px;
     margin-left: auto;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 28px;
     background-color: #2488f7;
-    color: #ffffff;
+    color: #FEFEFE;
     cursor: pointer;
     outline: none;
-    border: 2px solid #2488f7;
+    border: 3px solid #2488f7;
   }
   
   .item-form-wrapper input[type="submit"]:hover {
-    background-color: #ffffff;
+    background-color: #FEFEFE;
     color: #2488f7;
     transition: all 0.3s ease;
   }

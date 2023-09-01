@@ -63,7 +63,6 @@ app.post('/delete/:id', (req, res) => {
   
 // 編集画面を表示する
 app.get('/edit/:id', (req, res) => {
-  // 選択されたメモをデータベースから取得する処理
   pool.query(
     'SELECT * FROM toDo WHERE id = $1',
     [req.params.id],
