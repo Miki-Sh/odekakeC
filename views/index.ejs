@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>おでかけチェック</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- UDフォントを適用 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <a href="/" class="header-logo">おでかけチェック</a>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1>おでかけ前のチェックリスト</h1>
+        <a href="/new" class="new-button">+ 新規作成</a>
+      </div>
+      <div class="index-table-wrapper">
+        <div class="table-head">
+          <span class="id-column">☑️</span>
+          <span>すること</span>
+          
+        </div>
+         <ul class="table-body">
+            <% toDo.forEach((item) => { %> 
+                <li>
+                  <div class="item-data">
+                    <label><input type="checkbox" name="chk" />
+                    <span class="name-column"><%= item.todolist %></label>
+                  </div>
+                  <div class="item-menu">
+                    <form action="/delete/<%= item.id %>" method="post">
+                      <input type="submit" value="削除">
+                    </form>
+                    <a href="/edit/<%= item.id %>">編集</a>
+                  </div>
+                </li>
+             <% }) %>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

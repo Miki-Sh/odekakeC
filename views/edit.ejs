@@ -1,0 +1,29 @@
+<!-- 編集画面 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>おでかけチェック</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  
+  <body>
+    <header>
+      <a href="/" class="header-logo">おでかけチェック</a>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1>おでかけチェックリスト編集</h1>
+      </div>
+      <div class="item-form-wrapper">
+        <p class="form-label">すること</p>
+        <form action="/update/<%= item.id %>" method="post">
+          <input type="text" value="<%= item.todolist %>" name="itemName">
+          <input type="submit" value="更新する">
+        </form>
+      </div>
+      <a href="/index" class="cancel-button"></span>もどる</a>
+    </div>
+  </body>
+</html>
