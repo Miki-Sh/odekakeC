@@ -7,6 +7,12 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: false}));
 
+// EJSをテンプレートエンジンとして設定
+app.set('view engine', 'ejs');
+const path = require('path');
+// viewsフォルダのパスを指定
+app.set('views', path.join(__dirname, 'views'));
+
 const pool = new Pool({
   connectionString: process.env.CONNECTION_URL,
 })
