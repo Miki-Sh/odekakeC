@@ -1,17 +1,17 @@
 {
   "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs16",
+    "app.js": {
       "memory": 512
     }
   },
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
   "builds": [
     {
       "src": "public/**/*",
       "use": "@vercel/static"
     },
     {
-      "src": "views/**/*.ejs",
+      "src": "views/*.ejs",
       "use": "@vercel/node"
     }
   ]
