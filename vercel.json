@@ -5,14 +5,5 @@
     }
   },
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
-  "builds": [
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "views/*.ejs",
-      "use": "@vercel/node"
-    }
-  ]
+  
 }
