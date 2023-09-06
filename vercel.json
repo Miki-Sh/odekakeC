@@ -1,9 +1,13 @@
 {
-  "functions": {
-    "app.js": {
-      "memory": 512
+  "name": "my-vercel-project",
+  "version": 1,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
     }
-  },
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
-  
+  ],
+  // "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
 }
+
+
