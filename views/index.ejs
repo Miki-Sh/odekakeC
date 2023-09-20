@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>おでかけチェック</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <!-- UDフォントを適用 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <header>
@@ -23,35 +22,35 @@
         <div class="table-head">
           <span class="id-column">☑️</span>
           <span>やること</span>
-          
         </div>
-         <ul class="table-body">
-            <% toDo.forEach((item) => { %> 
-                <li>
-                  <div class="item-data">
-                    <label><input type="checkbox" name="chk" />
-                    <span class="name-column"><%= item.todolist %></label>
-                  </div>
-                  <div class="item-menu">
-                    <form action="/delete/<%= item.id %>" method="post">
-                      <input type="submit" value="削除">
-                    </form>
-                    <a href="/edit/<%= item.id %>">編集</a>
-                  </div>
-                </li>
-             <% }) %>
+        <ul class="table-body">
+          <% toDo.forEach((item) => { %>
+            <li>
+              <div class="item-data">
+                <label><input type="checkbox" name="chk" />
+                <span class="name-column"><%= item.todolist %></label>
+              </div>
+              <div class="item-menu">
+                <form action="/delete/<%= item.id %>" method="post">
+                  <input type="submit" value="削除">
+                </form>
+                <a href="/edit/<%= item.id %>">編集</a>
+              </div>
+            </li>
+          <% }) %>
         </ul>
       </div>
       <button id="uncheck-btn" class="uncheck-btn">全てのチェックを外す</button>
       <script>
-       const uncheckBtn = window.document.getElementById("uncheck-btn"); 
-       const el = window.document.getElementsByName("chk"); 
-       const uncheckAll = () => { 
-         for (let i = 0; i < el.length; i++) { 
-           el[i].checked = false; 
-           }}; 
+        const uncheckBtn = window.document.getElementById("uncheck-btn"); 
+        const el = window.document.getElementsByName("chk"); 
+        const uncheckAll = () => { 
+          for (let i = 0; i < el.length; i++) { 
+            el[i].checked = false; 
+          } 
+        }; 
         uncheckBtn.addEventListener("click", uncheckAll, false); 
       </script>
-      </div>
+    </div>
   </body>
 </html>
