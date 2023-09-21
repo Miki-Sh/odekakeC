@@ -4,7 +4,7 @@ require('dotenv').config()
 
 const app = express();
 
-// app.use(express.static('public'));
+app.use(express.static('views'));
 app.use(express.urlencoded({extended: false}));
 app.set('view engine', 'ejs');
 
