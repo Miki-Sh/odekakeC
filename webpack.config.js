@@ -14,7 +14,11 @@ module.exports = {
       },
       {
         test: /\.ejs$/,
-        use: ["html-loader"],
+        use: ["html-loader",
+          { loader: "ejs-loader",
+            options: {
+              esModule: false,
+            }}],
       },
       {
         test: /\.css$/,
