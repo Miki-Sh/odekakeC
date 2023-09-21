@@ -58,22 +58,4 @@ module.exports = {
       directory: path.resolve(__dirname, "dist")
     }
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './views/index.ejs'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'edit.html',
-      template: './views/edit.ejs'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'new.html',
-      template: './views/new.ejs'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'top.html',
-      template: './views/top.ejs'
-    })
-  ]
 };
